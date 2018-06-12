@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="account" class="com.juurivuohi.main.Account"
+		factory-bean="accountfactory" factory-method="createAccount">
+		<constructor-arg index="0" value="544.53"></constructor-arg>
+		<constructor-arg index="1" value="FI53 3509 5325 32"></constructor-arg>
+	
+	
+	</bean>
+	<bean id="accountfactory"
+		class="com.juurivuohi.main.AccountFactor">
+	</bean>
+	<bean id="address" class="com.juurivuohi.main.Address"
+		factory-method="createAddress">
+		<constructor-arg value="Mannerheimintie 5 a 13" index="0"></constructor-arg>
+		<constructor-arg index="1" value="Helsinki"></constructor-arg>
+		<constructor-arg index="2" value="00100"></constructor-arg>
+	</bean>
+	<bean id="customer" class="com.juurivuohi.main.Customer"
+		autowire="byName" init-method="onInit">
+	</bean>
+</beans>
