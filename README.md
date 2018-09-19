@@ -1,4 +1,4 @@
-# Still going through the CaveOfProgramming lessons. Learning about annonations, autowiring and factory methods/beans.
+# Learning more about Spring web MVC: i.e. annonations, autowiring and factory methods/beans.
 Small spring project showcase.
 
 Created with Eclipse Java EE IDE Oxygen.3a
