@@ -1,5 +1,4 @@
-# Spring-example-3
-
+# Still going through the CaveOfProgramming lessons. Learning about annonations, autowiring and factory methods/beans.
 Small spring project showcase.
 
 Created with Eclipse Java EE IDE Oxygen.3a
